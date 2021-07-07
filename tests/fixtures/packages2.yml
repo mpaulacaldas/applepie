@@ -8,7 +8,7 @@ http_interactions:
     headers:
       Accept: application/json, text/xml, application/xml, */*
       Content-Type: ''
-      Authorization: token top-secret-token
+      Authorization: not-my-secret-hehe
   response:
     status:
       status_code: 200
@@ -17,7 +17,7 @@ http_interactions:
       message: 'Success: (200) OK'
     headers:
       server: nginx/1.18.0
-      date: Wed, 07 Jul 2021 08:54:51 GMT
+      date: Wed, 07 Jul 2021 08:57:42 GMT
       content-type: application/json; charset=utf-8
       content-length: '180'
       connection: keep-alive
@@ -44,5 +44,5 @@ http_interactions:
           "webmockr",
           "xml2"
         ]
-  recorded_at: 2021-07-07 08:54:51 GMT
+  recorded_at: 2021-07-07 08:57:42 GMT
   recorded_with: vcr/1.0.2, webmockr/0.8.0
