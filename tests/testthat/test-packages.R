@@ -20,3 +20,10 @@ test_that("get_packages() retries", {
   expect_vector(pkgs, character())
 })
 
+test_that("get_packages() is skipped if not beyonce", {
+  skip_if_not_beyonce()
+  vcr::use_cassette("blabla", {
+    pkgs <- get_packages("maelle")
+  })
+  expect_vector(pkgs, character())
+})
